@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="POM" >
+
+    <test name="PageFactory">
+<classes>
+    	<class name="aps.TestScripts.LoginPageTest" />
+    	<class name="aps.TestScripts.HomePageTest" />
+     	<class name="aps.TestScripts.CreateIdentifiedSOWPageTest" />
+   </classes>
+  </test>
+</suite>

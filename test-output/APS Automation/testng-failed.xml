@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [APS Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="aps.ExtentReportNGListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Practice(failed)">
+    <classes>
+      <class name="aps.TestScripts.CreateIdentifiedSOWPageTest">
+        <methods>
+          <include name="ObjectsSetUp"/>
+          <include name="navigation"/>
+        </methods>
+      </class> <!-- aps.TestScripts.CreateIdentifiedSOWPageTest -->
+    </classes>
+  </test> <!-- Practice(failed) -->
+</suite> <!-- Failed suite [APS Automation] -->

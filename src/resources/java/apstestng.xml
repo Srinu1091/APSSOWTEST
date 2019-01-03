@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="APS Automation" >
+
+<listeners>
+ <listener class-name="aps.ExtentReportNGListener.ExtentReporterNG"></listener>
+</listeners>
+
+    <test name="Practice">
+<classes>
+    	<class name="aps.TestScripts.LoginPageTest" />
+    	<class name="aps.TestScripts.HomePageTest" />
+     	<class name="aps.TestScripts.CreateIdentifiedSOWPageTest" />
+    </classes>
+  </test>
+</suite>
