@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 02 18:03:50 IST 2019</td>
+<td>Started on:</td><td>Mon Jan 07 15:12:07 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17121 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35921 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='aps.TestScripts.CreateIdentifiedSOWPageTest.navigation()'><b>navigation</b><br>Test class: aps.TestScripts.CreateIdentifiedSOWPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos; and @data-content=&apos;Menu&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;gn-trigger&apos;]/a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos;]&quot;}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -84,9 +84,9 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LSLT-IT10369&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-43-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39547}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d1090f24594ff2ccda0a31e16879ca28
-*** Element info: {Using=xpath, value=//a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos; and @data-content=&apos;Menu&apos;]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46499}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 4f24d47fa8e1baf30a0d862b7efdce15
+*** Element info: {Using=xpath, value=//div[@class=&apos;gn-trigger&apos;]/a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -101,11 +101,11 @@ Session ID: d1090f24594ff2ccda0a31e16879ca28
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.getLocation(Unknown Source)
-	at aps.Pages.CreateIdentifiedSOWPage.navigationToCreateIdentifiedSOW(CreateIdentifiedSOWPage.java:40)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at aps.Pages.CreateIdentifiedSOWPage.navigationToCreateIdentifiedSOW(CreateIdentifiedSOWPage.java:44)
 	at aps.TestScripts.CreateIdentifiedSOWPageTest.navigation(CreateIdentifiedSOWPageTest.java:26)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948395645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace948395645'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos; and @data-content=&apos;Menu&apos;]&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2108708444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2108708444'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;gn-trigger&apos;]/a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos;]&quot;}
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.15.0-43-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -113,9 +113,9 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LSLT-IT10369&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-43-generic&apos;, java.version: &apos;10.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39547}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d1090f24594ff2ccda0a31e16879ca28
-*** Element info: {Using=xpath, value=//a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos; and @data-content=&apos;Menu&apos;]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46499}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 4f24d47fa8e1baf30a0d862b7efdce15
+*** Element info: {Using=xpath, value=//div[@class=&apos;gn-trigger&apos;]/a[@class=&apos;gn-opener gn-icon gn-icon-menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -134,8 +134,8 @@ Session ID: d1090f24594ff2ccda0a31e16879ca28
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.getLocation(Unknown Source)
-	at aps.Pages.CreateIdentifiedSOWPage.navigationToCreateIdentifiedSOW(CreateIdentifiedSOWPage.java:40)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at aps.Pages.CreateIdentifiedSOWPage.navigationToCreateIdentifiedSOW(CreateIdentifiedSOWPage.java:44)
 	at aps.TestScripts.CreateIdentifiedSOWPageTest.navigation(CreateIdentifiedSOWPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -163,8 +163,8 @@ Session ID: d1090f24594ff2ccda0a31e16879ca28
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
-<td>aps.TestScripts.CreateIdentifiedSOWPageTest@957e06</td></tr>
+<td>30</td>
+<td>aps.TestScripts.CreateIdentifiedSOWPageTest@31fa1761</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -177,22 +177,22 @@ Session ID: d1090f24594ff2ccda0a31e16879ca28
 <td title='aps.TestScripts.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: aps.TestScripts.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>aps.TestScripts.LoginPageTest@729d991e</td></tr>
+<td>aps.TestScripts.LoginPageTest@1de5f259</td></tr>
 <tr>
 <td title='aps.TestScripts.HomePageTest.clientSelectionTest()'><b>clientSelectionTest</b><br>Test class: aps.TestScripts.HomePageTest</td>
 <td></td>
-<td>6</td>
-<td>aps.TestScripts.HomePageTest@31fa1761</td></tr>
+<td>5</td>
+<td>aps.TestScripts.HomePageTest@729d991e</td></tr>
 <tr>
 <td title='aps.TestScripts.HomePageTest.pageTitleTest()'><b>pageTitleTest</b><br>Test class: aps.TestScripts.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>aps.TestScripts.HomePageTest@31fa1761</td></tr>
+<td>aps.TestScripts.HomePageTest@729d991e</td></tr>
 <tr>
 <td title='aps.TestScripts.LoginPageTest.pageTitleTest()'><b>pageTitleTest</b><br>Test class: aps.TestScripts.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>aps.TestScripts.LoginPageTest@729d991e</td></tr>
+<td>aps.TestScripts.LoginPageTest@1de5f259</td></tr>
 </table><p>
 </body>
 </html>

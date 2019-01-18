@@ -2,6 +2,7 @@ package aps.Pages;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,11 +15,13 @@ public class CreateIdentifiedSOWPage extends APSTestBase
 {
 	APSTestBase testbase;
 	//Main menu icon webelement
-	@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']")
-//	//@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']//parent::div[@class='gn-trigger']")
-	WebElement menuicon;
+//	@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']")
+////	@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']//parent::div[@class='gn-trigger']")
+//	WebElement menuicon;
 	
 	//WebElement menuicon = driver.findElement(By.xpath("//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']"));
+	@FindBy(xpath="//div[@class='gn-trigger']/a[@class='gn-opener gn-icon gn-icon-menu']")
+	WebElement menuicon;
 	
 	//Requirement sub menu element
 	@FindBy(xpath="//a[@class='gn-icon gn-parent-menu' and text()='Requirements']")
@@ -37,11 +40,16 @@ public class CreateIdentifiedSOWPage extends APSTestBase
 	{
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		testbase = new APSTestBase();
-		Point menupoint = menuicon.getLocation();
-		int xcord=menupoint.getX();
-		int ycord=menupoint.getY();
-		Actions action = new Actions(driver);
-		action.moveByOffset(xcord, ycord).click().build().perform();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		menuicon.click();
+		//Point menupoint = menuicon.getLocation();
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("document.getElementByClass('gn-opener gn-icon gn-icon-menu' and @data-content='Menu').click();");
+//		int xcord=menupoint.getX();
+//		int ycord=menupoint.getY();
+//		Actions action = new Actions(driver);
+//		action.moveByOffset(xcord, ycord).click().build().perform();
 		
 		
 		
