@@ -16,12 +16,12 @@ public class CreateIdentifiedSOWPage extends APSTestBase
 	APSTestBase testbase;
 	//Main menu icon webelement
 //	@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']")
-////	@FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']//parent::div[@class='gn-trigger']")
-//	WebElement menuicon;
+    @FindBy(xpath="//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']//parent::div[@class='gn-trigger']")
+	WebElement menuicon;
 	
 	//WebElement menuicon = driver.findElement(By.xpath("//a[@class='gn-opener gn-icon gn-icon-menu' and @data-content='Menu']"));
-	@FindBy(xpath="//div[@class='gn-trigger']/a[@class='gn-opener gn-icon gn-icon-menu']")
-	WebElement menuicon;
+//	@FindBy(xpath="//div[@class='gn-trigger']/a[@class='gn-opener gn-icon gn-icon-menu']")
+//	WebElement menuicon;
 	
 	//Requirement sub menu element
 	@FindBy(xpath="//a[@class='gn-icon gn-parent-menu' and text()='Requirements']")
